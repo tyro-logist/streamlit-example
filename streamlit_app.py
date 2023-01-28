@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 st.title("CO2e Emissions over Time")
 
 url = "https://raw.githubusercontent.com/tyro-logist/Ontario-GREENHOUSE-GAS-EMISSIONS-REPORTING-BY-FACILITY/main/GHG_Data_2010_2020_data_Dec162021.csv"
-data = pd.read_csv(url)
+data = pd.read_csv(url, encoding = "ISO-8859-1")
 
 st.write("Data loaded from:", url)
 
